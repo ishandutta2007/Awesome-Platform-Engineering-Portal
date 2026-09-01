@@ -25,85 +25,36 @@ How to Contribute
 
 Disclaimer
 
-SaaS/Hosted Platforms
+## SaaS/Hosted Platforms
 
-Humanitec
-Platform engineering platform centered on internal developer platforms, workload specifications and infrastructure orchestration for providing developers with standardized self-service environments.
-
-Humanitec Portal
-Humanitec's developer portal offering complements its Platform Orchestrator with catalog, platform and self-service capabilities for internal developer platforms.
-
-Port
-Commercial no-code internal developer portal for building software catalogs, scorecards, dashboards and self-service actions around an organization's engineering ecosystem.
-
-Cortex
-Internal developer portal focused on service catalogs, ownership, engineering standards, scorecards and service maturity.
-
-OpsLevel
-Developer portal and service catalog platform focused on ownership, service maturity, engineering standards and automated catalog maintenance.
-
-Roadie
-Managed Backstage platform providing a hosted software catalog, templates, TechDocs, scorecards and integrations without requiring teams to operate their own Backstage infrastructure.
-
-Harness IDP
-Commercial internal developer portal integrated with the broader Harness software delivery platform for self-service workflows, CI/CD and platform engineering.
-
-Mia-Platform
-Developer platform focused on creating and operating cloud-native applications through templates, reusable components, governance and self-service workflows.
-
-Qovery
-Developer platform combining application deployment, environment management, infrastructure automation and developer self-service.
-
-Akuity
-GitOps-focused platform built around Argo technologies for managing Kubernetes applications, environments and progressive delivery workflows.
-
-Kraken
-Platform engineering and software delivery ecosystem supporting infrastructure automation and developer productivity capabilities.
-
-Atlassian Compass
-Developer experience platform and software component catalog designed to provide service ownership, engineering standards and visibility into software components.
-
-Spotify Portal
-Managed and commercialized Backstage-oriented developer portal capabilities designed around the software catalog and developer experience model pioneered by Backstage.
-
-StackGen
-Platform engineering platform focused on creating developer environments and self-service workflows from infrastructure and application abstractions.
-
-Facets.cloud
-Internal developer platform focused on infrastructure provisioning, platform abstractions and developer self-service for cloud-native teams.
-
-Massdriver
-Platform engineering product that packages infrastructure and operational expertise into reusable components for developer self-service.
-
-Northflank
-Cloud-native application platform combining service visibility with application builds, deployments, databases, networking and infrastructure operations.
-
-Appvia
-Platform engineering company offering developer self-service and cloud infrastructure management capabilities, including its Wayfinder platform.
-
-Cycloid
-Platform and developer portal combining infrastructure automation, GitOps workflows, self-service and governance.
-
-Configure 8
-Commercial internal developer portal focused on service catalogs, engineering standards, scorecards and automation.
-
-Rely.io
-Managed developer portal platform focused on service catalogs, scorecards, ownership and developer experience.
-
-Flightdeck
-Managed developer portal platform based on the Backstage ecosystem and designed to reduce self-hosting overhead.
-
-Northflank Developer Platform
-Application delivery platform providing a developer-facing abstraction over infrastructure, CI/CD and cloud operations.
-
-Encore
-Code-first developer platform that combines application architecture, infrastructure provisioning and operational capabilities for backend development.
-
-Platform.sh
-Cloud application platform providing standardized development, deployment and environment workflows.
-
-Red Hat Developer Hub
-Enterprise developer portal product based on the Backstage ecosystem and designed for building standardized internal developer platforms.
+| Product | Description | Pricing (Starting Tier) | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **Humanitec** | Platform engineering platform centered on internal developer platforms, workload specifications, and infrastructure orchestration for providing developers with standardized self-service environments. | **Teams Plan:** $1,979/month (includes 5 users, 1 project with up to 5 environments, email support) | **14-day free trial** & interactive 10-minute sandbox environment (no credit card required) |
+| **Humanitec Portal** | Humanitec's developer portal offering complements its Platform Orchestrator with catalog, platform, and self-service capabilities for internal developer platforms. | **Teams Plan:** $1,979/month (bundled with Platform Orchestrator; Pro tier at $4,950/month) | **14-day free trial** with access to portal components and sandbox environment |
+| **Port** | Commercial no-code internal developer portal for building software catalogs, scorecards, dashboards, and self-service actions around an organization's engineering ecosystem. | **Basic Plan:** $30/seat/month billed annually (Standard tier at $40/seat/month) | **Free forever** for up to 15 seats and 10,000 catalog entities (full platform features, no credit card required) |
+| **Cortex** | Internal developer portal focused on service catalogs, ownership, engineering standards, scorecards, and service maturity. | **Standard Tier:** Starting at ~$30–$50/developer/month (~$30,000/year minimum contract via AWS Marketplace / direct) | **14 to 30 days free trial** / proof-of-concept environment upon demo request |
+| **OpsLevel** | Developer portal and service catalog platform focused on ownership, service maturity, engineering standards, and automated catalog maintenance. | **Teams Tier:** Starting at ~$350–$600/developer/year (~$29–$50/dev/month; typical min. contract ~$15,000/year for 25–50 devs) | **14 to 30 days free trial** / guided proof-of-concept with interactive demo sandbox upon request |
+| **Roadie** | Managed Backstage platform providing a hosted software catalog, templates, TechDocs, scorecards, and integrations without requiring teams to operate their own Backstage infrastructure. | **Teams Plan:** $24/developer/month (billed for active contributing developers; viewers/read-only users are free) | **14-day free trial**; **Roadie Local** is free forever for teams with up to 15 users |
+| **Harness IDP** | Commercial internal developer portal integrated with the broader Harness software delivery platform for self-service workflows, CI/CD, and platform engineering. | **Developer 360:** Starting at ~$25–$40/developer/month per IDP user (or unit-based Harness Flex Subscription Units) | **14-day free trial** with access to core platform modules upon signup |
+| **Mia-Platform** | Developer platform focused on creating and operating cloud-native applications through templates, reusable components, governance, and self-service workflows. | **Standard Plan:** Starting at ~$5,000/month (~$60,000/year base platform license for enterprise deployments) | **14 to 30 days free trial** / guided proof-of-concept upon scheduling a consultation |
+| **Qovery** | Developer platform combining application deployment, environment management, infrastructure automation, and developer self-service. | **Team Plan:** Usage-based compute billing starting with base resources + $0.016/deployment min overage (historically $49/user/month) | **14-day free trial** including 10 users, 100 environments, and 5,000 deployment minutes (no credit card required) |
+| **Akuity** | GitOps-focused platform built around Argo technologies for managing Kubernetes applications, environments, and progressive delivery workflows. | **Pro Plan:** $495/month (includes 1 Argo CD control plane, 1 Kargo control plane, 50 apps, 50 stages, 25M AI tokens) | **14-day free trial** of Pro tier features; **6 months free** for qualified early-stage startups |
+| **Kraken** | Platform engineering and software delivery ecosystem supporting infrastructure automation and developer productivity capabilities. | **Cloud Tier:** Starting at $20/user/month for managed cloud instances | **Free forever** for self-hosted Community Edition; **14-day free trial** for cloud-hosted environments |
+| **Atlassian Compass** | Developer experience platform and software component catalog designed to provide service ownership, engineering standards, and visibility into software components. | **Standard Plan:** $8/user/month (Premium tier at $25/user/month) | **Free forever** for up to 3 full users (unlimited basic users) and up to 10,000 components |
+| **Spotify Portal** | Managed and commercialized Backstage-oriented developer portal capabilities designed around the software catalog and developer experience model pioneered by Backstage. | **Enterprise Subscription:** Starting at ~$20–$35/developer/month (annual agreement via AWS Marketplace) | **30-day evaluation trial** / private offer via AWS Marketplace and sales consultation |
+| **StackGen** | Platform engineering platform focused on creating developer environments and self-service workflows from infrastructure and application abstractions. | **Starter Edition:** $1,200/year (~$100/month for up to 5 developers via AWS Marketplace) | **Free forever** Developer Edition for 1 user per organization |
+| **Facets.cloud** | Internal developer platform focused on infrastructure provisioning, platform abstractions, and developer self-service for cloud-native teams. | **SaaS Plan:** $799/month (includes 20 Resource Instances; additional RIs at $10/RI/month) | **14-day free trial** with starter quota included (no credit card required) |
+| **Massdriver** | Platform engineering product that packages infrastructure and operational expertise into reusable components for developer self-service. | **Business Plan:** $30/seat/month (or base platform tier from $500/month) | **14-day free trial** of Business plan (no credit card required) + 1-month free self-hosted evaluation license |
+| **Northflank** | Cloud-native application platform combining service visibility with application builds, deployments, databases, networking, and infrastructure operations. | **Pay-As-You-Go Compute:** Starting from $2.70/month ($0.01667/vCPU-hr, $0.00833/GB-hr RAM; $0 per-seat fee) | **Free forever** Sandbox tier with 2 services, 1 database, 2 cron jobs, and always-on compute |
+| **Appvia** | Platform engineering company offering developer self-service and cloud infrastructure management capabilities, including its Wayfinder platform. | **Wayfinder Standard:** Starting at £120/cluster/year (~$150/cluster/year) or ~$25/developer/month | **Free forever** "Free to Start" tier for the first cluster with self-service developer workspaces and no end date |
+| **Cycloid** | Platform and developer portal combining infrastructure automation, GitOps workflows, self-service, and governance. | **Starter Plan:** €29/user/month (~$29/user/month, billed annually) | **14-day free trial** / guided demo evaluation available upon request |
+| **Configure 8** | Commercial internal developer portal focused on service catalogs, engineering standards, scorecards, and automation. | **Teams Plan:** $24/developer/month (billed per active SCM contributor; non-coding users are free) | **Free forever** for small teams & non-profits; **14-day free trial** for standard organizations |
+| **Rely.io** | Managed developer portal platform focused on service catalogs, scorecards, ownership, and developer experience. | **Standard Plan:** Starting at $25/user/month | **14-day free trial** with instant sandbox onboarding and interactive demo environments |
+| **Flightdeck** | Managed developer portal platform based on the Backstage ecosystem and designed to reduce self-hosting overhead. | **Managed Plan:** Starting at $20/developer/month (approx. $500/month minimum base) | **14-day free trial** / evaluation sandbox access on signup |
+| **Northflank Developer Platform** | Application delivery platform providing a developer-facing abstraction over infrastructure, CI/CD, and cloud operations. | **Micro Tier:** Starting at $2.70/month per micro instance ($0.01667/vCPU-hr; $0 per-seat charges) | **Free forever** Sandbox plan with 2 services, 1 managed database, and 2 cron jobs |
+| **Encore** | Code-first developer platform that combines application architecture, infrastructure provisioning, and operational capabilities for backend development. | **Pro Plan:** $39/member/month (plus $99/cloud environment for dedicated AWS/GCP automation) | **Free forever** with unlimited team members, 100,000 requests/day, 1 GB DB storage, 1 GB object storage, and 100k PubSub msgs/day |
+| **Platform.sh** | Cloud application platform providing standardized development, deployment, and environment workflows. | **Base Tier:** Starting from $10/user/month + $9/project/month ($19/month first-project credit offset provided) | **15-day free trial** including 1 org, 1 project, 2 running environments, up to 4.5 CPUs, 12 GB RAM, and 20 GB storage (no credit card required) |
+| **Red Hat Developer Hub** | Enterprise developer portal product based on the Backstage ecosystem and designed for building standardized internal developer platforms. | **Enterprise Subscription:** Starting at ~$1,500/year (or via Red Hat OpenShift Platform Plus licensing) | **60-day product trial** (self-supported evaluation via Customer Portal) or **30-day Developer Sandbox** access |
 
 Open-Source GitHub Projects
 
