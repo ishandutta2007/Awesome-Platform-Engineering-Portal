@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-subtle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.08); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -40; }
+    }
+    .grid-bg { fill: url(#grid); }
+    .node { animation: pulse 3s infinite ease-in-out; transform-origin: center; }
+    .floating { animation: float 4s infinite ease-in-out; }
+    .stream { stroke-dasharray: 6, 6; animation: dash 2s linear infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
+  <rect width="1200" height="400" class="grid-bg" rx="16" />
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="150" cy="100" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.05;0.12;0.05" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1050" cy="300" r="160" fill="#a855f7" opacity="0.08" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.08;0.15;0.08" dur="7s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Connecting Pipeline Streams -->
+  <g opacity="0.6">
+    <path d="M 100 320 C 300 320, 350 220, 600 220 C 850 220, 900 340, 1100 340" fill="none" stroke="url(#accent-grad)" stroke-width="2" class="stream" />
+    <path d="M 100 120 C 300 120, 400 260, 600 260 C 800 260, 900 100, 1100 100" fill="none" stroke="url(#primary-grad)" stroke-width="2" class="stream" style="animation-duration: 3s;" />
+  </g>
+
+  <!-- Floating Topology Nodes -->
+  <g class="floating">
+    <!-- Node 1: Catalog -->
+    <g transform="translate(140, 200)">
+      <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#38bdf8" stroke-width="2" filter="url(#glow-subtle)" />
+      <text x="0" y="6" text-anchor="middle" font-size="20" fill="#38bdf8">📦</text>
+      <text x="0" y="44" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">CATALOG</text>
+    </g>
+
+    <!-- Node 2: Golden Path / Templates -->
+    <g transform="translate(300, 100)">
+      <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#818cf8" stroke-width="2" filter="url(#glow-subtle)" />
+      <text x="0" y="6" text-anchor="middle" font-size="20" fill="#818cf8">⚡</text>
+      <text x="0" y="44" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">TEMPLATES</text>
+    </g>
+
+    <!-- Node 3: Orchestration -->
+    <g transform="translate(900, 100)">
+      <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#c084fc" stroke-width="2" filter="url(#glow-subtle)" />
+      <text x="0" y="6" text-anchor="middle" font-size="20" fill="#c084fc">🚀</text>
+      <text x="0" y="44" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">DELIVERY</text>
+    </g>
+
+    <!-- Node 4: Self-Service -->
+    <g transform="translate(1060, 200)">
+      <circle cx="0" cy="0" r="28" fill="#1e293b" stroke="#f472b6" stroke-width="2" filter="url(#glow-subtle)" />
+      <text x="0" y="6" text-anchor="middle" font-size="20" fill="#f472b6">🛠️</text>
+      <text x="0" y="44" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">SELF-SERVICE</text>
+    </g>
+  </g>
+
+  <!-- Central Brand Card -->
+  <g transform="translate(600, 190)" text-anchor="middle">
+    <!-- Badge -->
+    <rect x="-170" y="-115" width="340" height="32" rx="16" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
+    <text x="0" y="-94" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="2">
+      ⚡ THE ULTIMATE CURATED ECOSYSTEM
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="-35" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="44" font-weight="900" fill="url(#primary-grad)" letter-spacing="-1" filter="url(#glow-subtle)">
+      PLATFORM ENGINEERING
+    </text>
+    <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="1">
+      PORTALS &amp; IDP MATRIX
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="65" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="500" fill="#94a3b8" letter-spacing="0.5">
+      Service Catalogs • Golden Paths • Cloud Infrastructure • Developer Self-Service
+    </text>
+
+    <!-- Stat Pills -->
+    <g transform="translate(0, 105)">
+      <rect x="-240" y="-14" width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" />
+      <text x="-165" y="4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" fill="#38bdf8">🏆 Top SaaS &amp; IDPs</text>
+
+      <rect x="-75" y="-14" width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" />
+      <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" fill="#a855f7">⭐ Open Source</text>
+
+      <rect x="90" y="-14" width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" />
+      <text x="165" y="4" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" fill="#34d399">💰 Transparent Pricing</text>
+    </g>
+  </g>
+</svg>
